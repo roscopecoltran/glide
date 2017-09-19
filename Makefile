@@ -96,7 +96,7 @@ install:
 	@go build -o glide -ldflags "-X main.version=${APP_VER_FILE}" cmd/glide/main.go
 	@glide --version
 
-darwin-all: gox
+darwin: gox
 	clear
 	echo ""
 	rm -f $(APP_NAME)
