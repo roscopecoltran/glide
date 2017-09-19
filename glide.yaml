@@ -1,23 +1,5 @@
 package: github.com/roscopecoltran/glide
 import:
-- package: github.com/Masterminds/glide
-  subpackages:
-  - action
-  - cache
-  - cfg
-  - dependency
-  - gb
-  - godep
-  - godep/strip
-  - gom
-  - gpm
-  - importer
-  - mirrors
-  - msg
-  - path
-  - repo
-  - tree
-  - util
 - package: github.com/Masterminds/semver
 - package: github.com/Masterminds/vcs
 - package: github.com/codegangsta/cli

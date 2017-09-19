@@ -47,11 +47,6 @@ _testmain.go
 dist/*
 dist/**
 
-### Vendor ###
-vendor
-vendor/
-vendor/**
-
 ### App ###
 dist/*/glide-*
 dist/*/glide_*

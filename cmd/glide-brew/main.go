@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/Masterminds/glide/msg"
 	"github.com/heewa/glide-brew/brew"
+	"github.com/roscopecoltran/glide/core/msg"
 )
 
 func main() {
