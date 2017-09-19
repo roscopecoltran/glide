@@ -1,19 +1,34 @@
-package: github.com/Masterminds/glide
-homepage: https://glide.sh
-license: MIT
-owners:
-- name: Matt Butcher
-  email: technosophos@gmail.com
-  homepage: http://technosophos.com/
-- name: Matt Farina
-  email: matt@mattfarina.com
-  homepage: https://www.mattfarina.com/
+package: github.com/roscopecoltran/glide
 import:
-- package: gopkg.in/yaml.v2
-- package: github.com/Masterminds/vcs
-  version: ^1.12.0
-- package: github.com/codegangsta/cli
-  version: ^1.16.0
+- package: github.com/Masterminds/glide
+  subpackages:
+  - action
+  - cache
+  - cfg
+  - dependency
+  - gb
+  - godep
+  - godep/strip
+  - gom
+  - gpm
+  - importer
+  - mirrors
+  - msg
+  - path
+  - repo
+  - tree
+  - util
 - package: github.com/Masterminds/semver
-  version: ^1.3.0
+- package: github.com/Masterminds/vcs
+- package: github.com/codegangsta/cli
+- package: github.com/heewa/glide-brew
+  subpackages:
+  - brew
+- package: github.com/michaelsauter/crane
+  subpackages:
+  - crane
 - package: github.com/mitchellh/go-homedir
+- package: github.com/roscopecoltran/gox
+  subpackages:
+  - core
+- package: gopkg.in/yaml.v2
