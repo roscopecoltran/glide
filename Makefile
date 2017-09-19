@@ -89,24 +89,25 @@ build:
 	@go build -o glide -ldflags "-X main.version=${APP_VER_FILE}" cmd/glide/main.go
 	@glide --version
 
+
 dist: macos linux windows
 
 install:
 	@go build -o glide -ldflags "-X main.version=${APP_VER_FILE}" cmd/glide/main.go
 	@glide --version
 
-darwin: gox
+darwin-all: gox
 	clear
 	echo ""
 	rm -f $(APP_NAME)
-	gox -verbose -ldflags="$(GO_BUILD_LDFLAGS)" -os="darwin" -arch="amd64" -output="{{.Dir}}" $(glide novendor)
+	gox -verbose -ldflags="$(GO_BUILD_LDFLAGS)" -os="darwin" -arch="amd64" -output="{{.Dir}}" ./cmd/...
 	echo ""
 
 darwin-tests: gox
 	clear
 	echo ""
 	rm -f $(APP_NAME)
-	gox -verbose -ldflags="$(GO_BUILD_LDFLAGS)" -os="darwin" -arch="amd64" -output="{{.Dir}}" $(glide novendor)
+	gox -verbose -ldflags="$(GO_BUILD_LDFLAGS)" -os="darwin" -arch="amd64" -output="{{.Dir}}" ./cmd/...
 	echo ""
 
 gox: 

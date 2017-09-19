@@ -1,7 +1,18 @@
 glide
 glide.exe
 
+crane.exe
+crane
+
+glide-brew
+glide-brew.exe
+
+gox
+gox.exe
+
 !cmd/glide*
+!cmd/gox*
+!cmd/crane*
 
 *.a
 *.sublime-project
